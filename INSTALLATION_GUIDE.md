@@ -6,7 +6,7 @@
 ![alt text](installation.png)
 
 ## 3. Left-click the installed file
-![alt text](image.png)
+![alt text](downloads.png)
 
 ## 4. Ignore Security Warning & left-click 'Run'
 ![alt text](security-warning.png)
