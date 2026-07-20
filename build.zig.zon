@@ -1,0 +1,14 @@
+.{
+    .name = .gentree,
+    .version = "0.2.0",
+    .fingerprint = 0x3b3c7b10997b3d42,
+    .minimum_zig_version = "0.16.0",
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        "LICENSE",
+        "README.md",
+    },
+    .dependencies = .{},
+}

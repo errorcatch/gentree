@@ -1,19 +1,14 @@
-# Dependencies
 node_modules/
 
-# Build output
 dist/
 build/
 bin/
 *.tsbuildinfo
 
-# Rust leftovers (earlier prototype; OneDrive keeps resyncing this)
 target/
 
-# gentree's generated mirror
 .gentree/
 
-# Rojo / Roblox
 *.rbxl
 *.rbxlx
 *.rbxm
@@ -22,41 +17,32 @@ target/
 *.rbxlx.lock
 sourcemap.json
 
-# Wally
 Packages/
 ServerPackages/
 DevPackages/
 
-# Logs and diagnostics
 *.log
 npm-debug.log*
 yarn-error.log*
 .npm/
 
-# Environment and secrets
 .env
 .env.*
 !.env.example
 
-# Test and coverage output
 coverage/
 .nyc_output/
 
-# Editors
-.vscode/*
-!.vscode/settings.json
-!.vscode/extensions.json
+
 .idea/
 *.swp
 *.swo
 
-# OS noise
 .DS_Store
 Thumbs.db
 desktop.ini
 $RECYCLE.BIN/
 
-# Scratch
 tmp/
 temp/
 test/
