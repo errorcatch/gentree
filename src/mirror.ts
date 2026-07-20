@@ -80,12 +80,6 @@ export async function syncMirror(
   return { written, removed, total: desired.size, warnings };
 }
 
-/**
- * Removing a directory in the same instant as the files inside it crashes Rojo
- * 7.7.0 (change_processor.rs canonicalizes a path that just vanished). Running
- * this as a separate pass, after Rojo has processed the file removals, is safe
- * on both 7.6.1 and 7.7.0.
- */
 export async function pruneMirror(root: string, config: Config): Promise<number> {
   const mirrorRoot = path.join(root, config.mirror.dir);
   const keep = new Set(requiredDirs(mirrorRoot, config));
@@ -104,15 +98,14 @@ async function pruneEmptyDirs(dir: string, keep: Set<string>): Promise<number> {
 
     if (keep.has(child)) continue;
 
-    // rmdir, not rm: it refuses to delete a directory that is not empty, so a
-    // race that adds a file back cannot lose data. Only count real removals.
+
     const remaining = await readdir(child).catch(() => ["-"]);
     if (remaining.length > 0) continue;
     try {
       await rmdir(child);
       removed += 1;
     } catch {
-      // Left in place; the next prune pass retries.
+
     }
   }
   return removed;

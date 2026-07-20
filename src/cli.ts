@@ -15,7 +15,7 @@ const program = new Command();
 program
   .name("gentree")
   .description("Generate a Rojo project tree from your source layout, live.")
-  .version("0.1.0")
+  .version("0.2.0")
   .option("-C, --root <dir>", "project root to operate on", ".");
 
 program
