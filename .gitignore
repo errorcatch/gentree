@@ -46,3 +46,6 @@ $RECYCLE.BIN/
 tmp/
 temp/
 test/
+
+.zig-cache/
+zig-out/
