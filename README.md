@@ -9,7 +9,7 @@ While [**genRojoTree**](github.com/leifstout/genRojoTree) offers similar service
 We are aiming to rewrite our source code in [**Rust**](github.com/rust-lang/rust) & potentially [**Zig**](github.com/ziglang/zig), to ensure smaller binary sizes and performance. While our current [**TypeScript**](https://github.com/microsoft/TypeScript) set-up is offering the same services, the binary is over 50 MB, which is extremely large for a CLI tool, a reason we'll be looking towards lighter languages in the future.
 
 # Tools Needed
-To get started you'll first need to install [**Git**](https://git-scm.com/install/) & [**NPM/NodeJS**](https://nodejs.org/en/download), for further assistance in installing **Gentree** please check [**Gentree's Official Docs**]().
+To get started you'll first need to install [**Git**](https://git-scm.com/install/) & [**NPM/NodeJS**](https://nodejs.org/en/download), for further assistance in installing **Gentree** please check [**Gentree's Installation Guide**](HOW_TO_INSTALL.md).
 
 Made By **@Errorcatch** 💖
 <br>
