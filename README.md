@@ -1,4 +1,4 @@
-![alt text](gentree.png)
+![alt text](gentree-s1.png)
 # What's Gentree?
 **Gentree** is a scaffolding tool addon for [**Rojo**](github.com/rojo-rbx/rojo). Inspired by [**genRojoTree**](github.com/leifstout/genRojoTree) made originally by [**Leif Stout**](https://www.youtube.com/@l_eif). Using **Gentree** allows developers to scale their projects while easily keeping notice of organization, in the [**latest release**](https://github.com/errorcatch/gentree/releases/tag/v0.2.0-alpha), which is still experimental, we have an easy set-up and a clean framework developers would prefer.
 
