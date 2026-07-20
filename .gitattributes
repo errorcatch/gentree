@@ -31,4 +31,4 @@ bin/**              linguist-generated=true
 package-lock.json   linguist-generated=true
 
 # Luau in scaffolded templates is example content, not this tool's source.
-*.luau linguist-detectable=false
+*.luau linguist-detectable=true
